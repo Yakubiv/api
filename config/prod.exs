@@ -4,7 +4,7 @@ config :peepchat, Peepchat.Endpoint,
   http: [port: {:system, "PORT"}],
   secret_key_base: System.get_env("SECRET_KEY_BASE"),
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
-  url: [host: "desolate-citadel-49162.herokuapp.com", port: 443],
+  url: [host: "rcane-temple-31463.herokuapp.com", port: 443],
 
 
 config :peepchat, Peepchat.Repo,
