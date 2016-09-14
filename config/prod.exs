@@ -2,9 +2,9 @@ use Mix.Config
 
 config :peepchat, Peepchat.Endpoint,
   http: [port: {:system, "PORT"}],
-  secret_key_base: System.get_env("SECRET_KEY_BASE"),
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
-  url: [host: "arcane-temple-31463.herokuapp.com", port: 443]
+  url: [host: "arcane-temple-31463.herokuapp.com", port: 443],
+  secret_key_base: System.get_env("SECRET_KEY_BASE")
 
 
 config :peepchat, Peepchat.Repo,
