@@ -10,6 +10,8 @@ defmodule Peepchat.Mixfile do
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      aliases: aliases,
+     build_path: "../../_build",
+     config_path: "../../config/config.exs",
      deps: deps]
   end
 
